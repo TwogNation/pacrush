@@ -50,6 +50,11 @@ const scriptsInEvents = {
 	async Global_Event68_Act11(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.close();
+	},
+
+	async Global_Event68_Act12(runtime, localVars)
+	{
+		window.parent.postMessage("WebSocketClosed", "*");
 	}
 
 };
